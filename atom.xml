@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>慕华</title>
+  
+  <subtitle>热爱技术，享受生活</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://galileofinchdudi.github.io/"/>
+  <updated>2020-05-15T03:11:00.832Z</updated>
+  <id>https://galileofinchdudi.github.io/</id>
+  
+  <author>
+    <name>Galileo Finch</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>helloworld</title>
+    <link href="https://galileofinchdudi.github.io/2020/05/15/helloworld/"/>
+    <id>https://galileofinchdudi.github.io/2020/05/15/helloworld/</id>
+    <published>2020-05-15T03:10:59.719Z</published>
+    <updated>2020-05-15T03:11:00.832Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
