@@ -183,6 +183,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       pageIteration: 2500,    // 如果文章页获取访问量失败，则每隔多少时间后获取一次访问量，直到获取成功或获取 10 次后。默认 3 秒。注意：设置时间太低，可能导致访问量 + 2、+ 3 ......
       // 说明：成功获取一次访问量，访问量 + 1，所以第一次获取失败后，设置的每个隔段重新获取时间，将会影响访问量的次数。如 100 可能每次获取访问量 + 3
     },
+    
     // 自定义hmtl(广告)模块
     htmlModules,
     indexImg: {
