@@ -201,7 +201,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       bubblePosition: 0,  // 气泡效果的位置，范围：0-100，不同数值代表不同的起始位置，0是整个图片，50是半张图（一半的下方）。bubble 为 true 生效。默认是 0
       bubbleNum: 200,   // 气泡的个数，bubble 为 true 生效，默认 200 个
     },
-    
+
     bodyBgImg: ['http://pics.galileofinch.top/imgs/TabascoEyes__a_dramatic_scene_from_1952_Soviet_version_of_Star__438c2768-8a9e-44b8-a6d1-3aa748ba8b05.png'
                 ,],  // 你的图片路径(必须位于 public 下)，可以是 URL
     bodyBgImgOpacity: 1,
@@ -212,6 +212,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }],
     ['link', { rel: 'icon', href: 'http://pics.galileofinch.top/imgs/logo.png' }], //favicons，资源放在public文件夹
     ['link', { rel: 'stylesheet', href: 'https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css' }],
+    ['script', { src: 'https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js' }],
     [
       'meta',
       {
@@ -244,7 +245,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     [
     	{
         	name: 'custom-plugins',
-        	globalUIComponents: ["BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+        	globalUIComponents: ["BlockToggle", "Twikoo"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
     	}
     ],
     'vuepress-plugin-baidu-autopush', // 百度自动推送
@@ -304,26 +305,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    [
-      'vuepress-plugin-comment', // 评论
-      {
-        choosen: 'gitalk',
-        options: {
-          clientID: 'ac0bd4b53ef82629486d',
-          clientSecret: '9e3ea4d5a1c19f1f629830079440f576b7c555bd',
-          repo: 'GalileoFinchDudi.github.io', // GitHub 仓库
-          owner: 'GalileoFinchDudi', // GitHub仓库所有者
-          admin: ['GalileoFinchDudi'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
-          pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-          body:
-            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-        },
-      },
-    ],
+    // [
+    //   'vuepress-plugin-comment', // 评论
+    //   {
+    //     choosen: 'gitalk',
+    //     options: {
+    //       clientID: 'ac0bd4b53ef82629486d',
+    //       clientSecret: '9e3ea4d5a1c19f1f629830079440f576b7c555bd',
+    //       repo: 'GalileoFinchDudi.github.io', // GitHub 仓库
+    //       owner: 'GalileoFinchDudi', // GitHub仓库所有者
+    //       admin: ['GalileoFinchDudi'], // 对仓库有写权限的人
+    //       // distractionFreeMode: true,
+    //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
+    //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+    //       title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+    //       labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+    //       body:
+    //         '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+    //     },
+    //   },
+    // ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {
