@@ -201,6 +201,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       bubblePosition: 0,  // 气泡效果的位置，范围：0-100，不同数值代表不同的起始位置，0是整个图片，50是半张图（一半的下方）。bubble 为 true 生效。默认是 0
       bubbleNum: 200,   // 气泡的个数，bubble 为 true 生效，默认 200 个
     },
+    
     bodyBgImg: ['http://pics.galileofinch.top/imgs/TabascoEyes__a_dramatic_scene_from_1952_Soviet_version_of_Star__438c2768-8a9e-44b8-a6d1-3aa748ba8b05.png'
                 ,],  // 你的图片路径(必须位于 public 下)，可以是 URL
     bodyBgImgOpacity: 1,
