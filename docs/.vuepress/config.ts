@@ -73,7 +73,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: 'http://pics.galileofinch.top/imgs/logo.png', // 导航栏logo
+    logo: 'https://pics.galileofinch.top/imgs/logo.png', // 导航栏logo
     repo: 'GalileoFinchDudi', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
@@ -127,7 +127,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'http://pics.galileofinch.top/imgs/99541668_p0_master1200.jpg',
+      avatar: 'https://pics.galileofinch.top/imgs/99541668_p0_master1200.jpg',
       name: 'Galileo Finch',
       slogan: 'You should know me.',
     },
@@ -202,7 +202,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       bubbleNum: 200,   // 气泡的个数，bubble 为 true 生效，默认 200 个
     },
 
-    bodyBgImg: ['http://pics.galileofinch.top/imgs/TabascoEyes__a_dramatic_scene_from_1952_Soviet_version_of_Star__438c2768-8a9e-44b8-a6d1-3aa748ba8b05.png'
+    bodyBgImg: ['https://pics.galileofinch.top/imgs/TabascoEyes__a_dramatic_scene_from_1952_Soviet_version_of_Star__438c2768-8a9e-44b8-a6d1-3aa748ba8b05.png'
                 ,],  // 你的图片路径(必须位于 public 下)，可以是 URL
     bodyBgImgOpacity: 1,
   },
@@ -210,7 +210,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
     ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }],
-    ['link', { rel: 'icon', href: 'http://pics.galileofinch.top/imgs/logo.png' }], //favicons，资源放在public文件夹
+    ['link', { rel: 'icon', href: 'https://pics.galileofinch.top/imgs/logo.png' }], //favicons，资源放在public文件夹
     ['link', { rel: 'stylesheet', href: 'https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css' }],
     ['script', { src: 'https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js' }],
     [
