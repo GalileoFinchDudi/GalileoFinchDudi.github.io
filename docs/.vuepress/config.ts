@@ -31,40 +31,22 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '技术',
-        link: '/tech/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        text: '杂谈',
+        link: '/technology/', 
         items: [
-          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-          {
-            text: '后端文章',
-            items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-            ],
-          },
+          // // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
+          // {
+          //   text: '前端',
+          //   items: [
+          //     { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+          //   ],
+          // },
         ],
       },
       {
         text: '全沾工程师',
         link: '/fullstack/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
       },
-      // {
-      //   text: '页面',
-      //   link: '/ui/',
-      //   items: [
-      //     { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-      //     { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
-      //   ],
-      // },
-      // {
-      //   text: '技术',
-      //   link: '/technology/',
-      //   items: [
-      //     { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
-      //     { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-      //     { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
-      //     { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
-      //   ],
-      // },
       { text: '关于', link: '/about/' },
       {
         text: '索引',
@@ -125,7 +107,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: 'Galileo Finch', // 必需
+      name: 'Galileo', // 必需
       link: 'https://github.com/GalileoFinchDudi', // 可选的
     },
 
@@ -134,28 +116,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       avatar: 'https://pics.galileofinch.top/imgs/99541668_p0_master1200.jpg',
       name: 'Galileo Finch',
       slogan: 'You should know me.',
-    },
-
-    // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
-    social: {
-      // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
-      icons: [
-        {
-          iconClass: 'icon-youjian',
-          title: '发邮件',
-          link: 'mailto:galileofinchdudi@gmail.com',
-        },
-        {
-          iconClass: 'icon-github',
-          title: 'GitHub',
-          link: 'https://github.com/GalileoFinchDudi',
-        },
-        {
-          iconClass: 'icon-twitter',
-          title: 'Twitter',
-          link: 'https://twitter.com/Galileo_Dudu',
-        },
-      ],
     },
 
     // 页脚信息
@@ -168,7 +128,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'Galileo Finch',
+        name: 'Galileo',
         link: 'https://github.com/GalileoFinchDudi'
       }
     },
